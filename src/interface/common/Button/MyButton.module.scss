@@ -1,0 +1,24 @@
+.myButton {
+   outline: none;
+   cursor: pointer;
+   padding: 10px;
+   outline: none;
+   border-radius: 10px;
+   border: none;
+   font-size: 1.2rem;
+   background: rgb(80, 80, 80);
+   color: white;
+   transition: 0.2s ease-in-out;
+
+   &:disabled {
+      opacity: 0.5;
+
+      &:hover {
+         background: none;
+      }
+   }
+
+   &:hover {
+      background: gray;
+   }
+}

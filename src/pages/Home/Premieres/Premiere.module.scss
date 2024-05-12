@@ -1,0 +1,33 @@
+.slide {
+   border-radius: var(--sm-borderR);
+   overflow: hidden;
+   max-width: 225px;
+   filter: brightness(0.3);
+   transition: var(--def-tr);
+
+   img {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+   }
+
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+.active {
+   filter: brightness(1);
+}
+
+@media (max-width: 1000px) {
+   .slide {
+      max-width: 175px;
+   }
+}
+
+@media (max-width: 550px) {
+   .slide {
+      max-width: 150px;
+   }
+}

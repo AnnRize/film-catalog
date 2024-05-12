@@ -1,0 +1,44 @@
+.ratingContainer {
+   grid-area: rating;
+   display: flex;
+   flex-direction: column;
+   gap: var(--m-gap);
+}
+
+.ratingSection {
+   h3 {
+      font-size: clamp(1.5rem, 2vw, 2rem);
+      text-align: left;
+      margin-bottom: 10px;
+   }
+}
+
+.ratingKinopoisk {
+   display: flex;
+   flex-direction: column;
+   gap: var(--sm-gap);
+   padding: 20px;
+   border-radius: var(--sm-borderR);
+   background: var(--main-gradient);
+   box-shadow: var(--filmRating-boxShadow);
+
+   .ratingWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+      gap: var(--sm-gap);
+
+      .rating {
+         display: block;
+         font-size: clamp(0.8rem, 5vw, 1.2rem);
+      }
+
+      .voteCount {
+         display: block;
+         font-size: clamp(0.6rem, 5vw, 1rem);
+         font-style: italic;
+         color: var(--filmRating-clr);
+      }
+   }
+}

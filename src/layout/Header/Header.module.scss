@@ -1,0 +1,24 @@
+.header {
+   padding: 30px 80px;
+   display: flex;
+   justify-content: center;
+   backdrop-filter: blur(5px);
+   background: var(--main-gradient);
+   font-size: var(--header-fontSize);
+}
+
+.navbar {
+   width: max-content;
+
+   > ul {
+      display: flex;
+      gap: var(--m-gap);
+      list-style-type: none;
+
+      > li {
+         a:hover {
+            color: var(--primary-clr);
+         }
+      }
+   }
+}

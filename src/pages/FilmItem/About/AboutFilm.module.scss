@@ -1,0 +1,30 @@
+.about {
+   display: flex;
+   flex-direction: column;
+   gap: var(--m-gap);
+}
+.filmInfo {
+   display: flex;
+   line-height: 1.5;
+
+   span {
+      display: block;
+      min-width: 20ch;
+   }
+}
+
+@media (max-width: 470px) {
+   .about {
+      gap: var(--sm-gap);
+   }
+
+   .filmInfo {
+      flex-direction: column;
+      gap: var(--sm-gap);
+
+      span {
+         font-weight: bold;
+         border-top: var(--sm-border);
+      }
+   }
+}

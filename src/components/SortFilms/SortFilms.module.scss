@@ -1,0 +1,31 @@
+.filterContainer {
+   width: 250px;
+   max-width: 250px;
+   min-width: 250px;
+   position: sticky;
+   top: 88px;
+}
+
+.filter {
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: var(--m-gap);
+   border-radius: var(--sm-borderR);
+}
+
+.filterSection {
+   display: flex;
+   flex-direction: column;
+   gap: var(--m-gap);
+}
+
+.inputContainer {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+   .input {
+      width: 80px;
+   }
+}

@@ -1,0 +1,27 @@
+.myInput {
+   width: 100%;
+   outline: none;
+   padding: 10px;
+   border-radius: 10px;
+   border: none;
+   font-size: 1.2rem;
+   background: rgb(80, 80, 80);
+   color: white;
+
+   //убирает глаз для пароля в ME
+   &[type="password"]::-ms-reveal {
+      display: none;
+   }
+
+   &::placeholder {
+      color: var(--textColor);
+      opacity: 0.3;
+   }
+   &:focus::placeholder {
+      color: var(--textColor);
+      opacity: 0.1;
+   }
+   /* &:focus {
+      outline: 2px solid white;
+   } */
+}

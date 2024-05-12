@@ -1,0 +1,17 @@
+.episode {
+   display: flex;
+   flex-direction: column;
+   gap: var(--sm-gap);
+   border-bottom: 2px solid wheat;
+}
+
+.episodeTitle {
+   text-align: center;
+}
+
+.episodeSynopsis {
+   text-align: left;
+}
+.episodeReleaseDate {
+   text-align: right;
+}

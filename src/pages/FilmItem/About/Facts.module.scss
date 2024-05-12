@@ -1,0 +1,23 @@
+.factsWrapper {
+   display: flex;
+   flex-direction: column;
+   gap: var(--m-gap);
+}
+
+.factsList {
+   list-style-type: none;
+   display: flex;
+   flex-direction: column;
+   transition: var(--def-tr);
+
+   li {
+      font-size: clamp(0.8rem, 5vw, 1.2rem);
+      line-height: 1.5;
+      padding: 5px;
+
+      &:nth-child(even) {
+         background-color: var(--filmFacts-background);
+         border-radius: var(--sm-borderR);
+      }
+   }
+}

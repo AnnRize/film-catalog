@@ -1,0 +1,39 @@
+.seasonsContainer {
+   grid-area: seasons;
+   display: flex;
+   flex-direction: column;
+   gap: var(--m-gap);
+}
+
+.season {
+   box-shadow: var(--filmSeasons-boxShadow);
+   padding: 20px;
+   border-radius: var(--sm-borderR);
+   background: var(--main-gradient);
+   overflow: hidden;
+
+   label:hover {
+      cursor: pointer;
+   }
+
+   .wrapper {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: var(--def-tr);
+
+      .episodeList {
+         overflow: hidden;
+         display: flex;
+         flex-direction: column;
+         gap: var(--m-gap);
+      }
+   }
+
+   input[type="checkbox"] {
+      display: none;
+   }
+
+   input:checked + label + .wrapper {
+      grid-template-rows: 1fr;
+   }
+}
